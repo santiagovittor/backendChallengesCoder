@@ -5,25 +5,21 @@ _En este repositorio se subirán los archivos correspondientes a las entregas de
 ## De momento 📋
 
 ```
-. Entrega de clase número 6 : Servidor con Express
+. Entrega de clase número 8 : Router & Multer
 ```
 
 ## Despliegue 📦
 
-Puedes encontrar un despliegue provisorio en [Glitch](https://twisty-cherry-burn.glitch.me/)
 
 En el despligue puedes acceder a las siguientes rutas por el momento : 
 ```
-/productos
+/
 ```
 ```
-/productoRandom
+/api/productos
 ```
 ```
-/vistas
-```
-```
-/fyh
+/api/productos/:id
 ```
 
 ## Autor ✒️
