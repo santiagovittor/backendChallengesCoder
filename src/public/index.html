@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <title>API RESTful</title>
+</head>
+
+<body>
+    <div class="formContainer">
+        <form id="form">
+            <h1>Add Item</h1>
+            <label>Title</label>
+            <input name="title">
+            <label>Price</label>
+            <input name="price">
+            <label>Thumbnail</label>
+            <input type="file" name="file">
+            <button type="submit">Add</button>
+        </form>
+        <div class="viewProductsContainer">
+            <button id="toggleProducts">
+                View Products
+            </button>
+        </div>
+        <div id="productsContainer">
+
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

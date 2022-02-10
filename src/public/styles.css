@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.formContainer {
+    display: grid;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(135deg, #f05f57 10%, #360940 100%);
+}
+
+#form{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100vh;
+    height: fit-content;
+    padding: 1rem;
+    margin: 1rem 0 1rem 0;
+    text-transform: uppercase;
+    color: white;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(27, 22, 22, 0.18);
+    justify-content: center;
+    align-items: center;
+}
+
+#form input{
+    margin: 1rem 0 1rem 0;
+    height: 1.25rem;
+}
+
+#form button{
+    height: 5vh;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid rgba(27, 22, 22, 0.18);
+    cursor: pointer;
+    color: white;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+#form button:hover{
+    background-color: white;
+    color: black;
+    transition: .5s;
+}
+
+#form h1{
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.viewProductsContainer{
+    display: grid;
+    height: 10vh;
+    width: 100%;
+    margin-bottom: 1rem;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(27, 22, 22, 0.18);
+}
+.viewProductsContainer:hover{
+    background-color: white;
+    color: black;
+    transition: .5s;
+}
+#toggleProducts:hover{
+    color: black;
+    transition: .5s;
+    
+}
+
+#toggleProducts{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#productsContainer {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 1rem;
+    width: 100%;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+}
+
+.productCard {
+    display: grid;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.productText {
+    display: grid;
+    justify-content: center;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.productCard img {
+    width: 25vh;
+    height: 25vh;
+    border-radius: 10px;
+}
