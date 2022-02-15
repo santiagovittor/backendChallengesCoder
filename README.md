@@ -20,7 +20,7 @@ Luego elegiría EJS ya que si bien no me gusta la sintaxis la estructura HTML si
 Por último, no me gustó para nada la forma de trabajar con Pug, me resulta raro y molesto que las etiquetas no se cierren y me imagino ocupando mucho tiempo arreglando problemas generados por una mala tabulación.
 ```
 
-## Rutas ℹ️
+## Rutas ℹ️	
 
 
 En el despligue puedes acceder a las siguientes rutas por el momento : 
