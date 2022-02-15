@@ -6,8 +6,10 @@ const uploader = require('../services/Upload')
 
 
 productsRouter.get('/', async (req,res)=>{
-    let productos = await productService.getAll()
-    res.send(productos.payload)
+    let products = await productService.getAll();
+    res.render('products',{
+        products:products.payload
+    })
 })
 
 productsRouter.get('/:id', async (req,res)=>{
@@ -22,6 +24,7 @@ productsRouter.post('/',uploader.single('file'), async (req,res)=>{
     if(!file) return res.status(500).send({error:"Couldn't upload file"});
     product.thumbnail = req.protocol+"://"+req.hostname+":8080/img/"+file.filename;
     await productService.add(product).then(result=>res.send(result))
+    res.redirect('/')
 })
 
 productsRouter.delete('/:id', async (req,res)=>{

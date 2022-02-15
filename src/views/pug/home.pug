@@ -1,0 +1,24 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    link(href="https://fonts.googleapis.com/css2?family=Cousine&display=swap" rel="stylesheet")
+    link(href='../../../styles.css' rel='stylesheet')
+    title Web Server con Pug
+  body
+    .formContainer
+      form#form
+        h1 Add Item
+        label Title
+        input(name='title')
+        label Price
+        input(name='price')
+        label Thumbnail
+        input(type='file' name='file')
+        button(type='submit') Add
+      button#navLinkButton
+        a(href='/products')
+          | See products
+      script(src='../../form.js')

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head') %>
+
+    <body>
+        <div class="formContainer">
+            <table class="productsTable">
+                <thead>
+                    <tr>
+                        <th>Título</th>
+                        <th>Precio</th>
+                        <th>Imagen</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% if (products) { %>
+                        <% products.forEach(function(product) { %>
+                            <tr>
+                                <td>
+                                    <%= product.title %>
+                                </td>
+                                <td>
+                                    <%= product.price %>
+                                </td>
+                                <td>
+                                    <img src=<%= product.thumbnail %>/>
+                                </td>
+                            </tr>
+                            <% }); %>
+                                <%} else { %>
+                                    <p> No items to show </p>
+                                    <% } %>
+                </tbody>
+            </table>
+            <button id="navLinkButton">
+                <a href="/">
+                    Back to form
+                </a>
+            </button>
+            </button>
+            <script src="../../form.js"></script>
+        </div>
+    </body>
+
+</html>

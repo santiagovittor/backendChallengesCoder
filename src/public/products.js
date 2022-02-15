@@ -1,6 +1,6 @@
 let container = document.getElementById('productsContainer');
 
-fetch('/api/products').then(result=>result.json()).then(json=>{
+fetch('/products').then(result=>result.json()).then(json=>{
     products = json;
     products.forEach(product=>{
         let card = document.createElement('div')
@@ -24,31 +24,3 @@ fetch('/api/products').then(result=>result.json()).then(json=>{
     })
 })
 
-let form = document.getElementById('form')
-
-const handleSubmit = (evt,form,route) =>{
-    evt.preventDefault();
-    let formData = new FormData(form)
-    fetch(route,{
-        method:"POST",
-        body:formData
-    }).then(result=>result.json()).then(json=>console.log(json))
-    form.reset();
-}
-
-form.addEventListener('submit',(e)=>handleSubmit(e,e.target,'/api/products'))
-
-let toggleProducts = document.getElementById('toggleProducts');
-
-const handleToggle = () =>{
-    if(container.style.display === 'none'){
-        container.style.display = 'grid';
-        toggleProducts.innerHTML = 'Hide Products'
-    }
-    else{
-        container.style.display = 'none'
-        toggleProducts.innerHTML = 'View Products'
-    }
-}
-
-toggleProducts.addEventListener('click',handleToggle)

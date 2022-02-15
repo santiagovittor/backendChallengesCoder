@@ -6,6 +6,11 @@
     border: none;
     outline: none;
     box-sizing: border-box;
+    font-family: 'Cousine', monospace;
+}
+
+a:visited{
+    color: black;
 }
 
 .formContainer {
@@ -106,37 +111,64 @@
     transition: .5s;
 }
 
-#productsContainer {
-    display: none;
-    justify-content: center;
-    align-items: center;
-    grid-gap: 1rem;
-    width: 100%;
-    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
-}
-
-.productCard {
+.productsTable {
     display: grid;
-    justify-content: center;
-    color: white;
-    font-weight: 700;
+    width: 40vw;
+    grid-gap: 1rem;
+    margin: 5vh 0 5vh 0;
     background: rgba(255, 255, 255, 0.25);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     border-radius: 10px;
-    padding: 1rem;
+    color: white;
+    font-weight: 400;
 }
 
-.productText {
-    display: grid;
+.productsTable img{
+    width: 100%;
+    height: 100%;
+}
+
+.productsTable tr{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+
+.productsTable tbody tr{
+    border: 1px solid white;
+}
+
+.productsTable td{
+    display: flex;
+    width: 100%;
+    align-items: center;
     justify-content: center;
-    padding: 1rem;
-    text-transform: uppercase;
+    border: 1px solid white;
 }
 
-.productCard img {
-    width: 25vh;
-    height: 25vh;
+
+#navLinkButton{
+    position: absolute;
+    top: 5vh;
+    right: 10vh;
+    width: 20vh;
+    height: 10vh;
     border-radius: 10px;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: 1px solid rgba(27, 22, 22, 0.18);
+}
+
+#navLinkButton:hover{
+    background-color: white;
+    color: black;
+    transition: .5s;
 }
