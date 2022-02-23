@@ -22,5 +22,17 @@
     "title": "Brazil",
     "price": 14000,
     "thumbnail": "https://www.footballkitarchive.com/images/2020/10/01/h8q9smzcbeTUe5g/brazil-2002-home.jpg"
+  },
+  {
+    "title": "Chelsea",
+    "price": "5000",
+    "thumbnail": "https://cdn.footballkitarchive.com/2020/12/10/InEZKlCgzRpkEnP.jpg",
+    "id": 5
+  },
+  {
+    "title": "Bayern",
+    "price": "15000",
+    "thumbnail": "https://cdn.footballkitarchive.com/2021/07/24/zJYn0OdqXOmj4FH.jpg",
+    "id": 6
   }
 ]

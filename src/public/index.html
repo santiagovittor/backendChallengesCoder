@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Cousine&display=swap" rel="stylesheet">
+    <link href="../../../styles.css" rel="stylesheet">
+    <title>Web Server con websocket</title>
+</head>
+
+<body>
+    <div class="formContainer">
+        <form id="productsForm">
+            <h1>Add Item</h1>
+            <label>Title</label>
+            <input name="title">
+            <label>Price</label>
+            <input name="price">
+            <label>Thumbnail</label>
+            <input name="thumbnail">
+            <button type="submit">Add</button>
+        </form>
+        <span id="productsTemplate">
+
+        </span>
+        <div class="chatBox">
+            <h1>Centro de mensajes</h1>
+            <button type="button" id="logInButton">Iniciar sesión</button>
+            <p id="howManyMessages">
+                    
+            </p>
+            <div class="chatBox__messages">
+                
+                <p id="log">
+                    
+                </p>
+            </div>
+            <div class="chatBox__inputContainer">
+                <input id="chatBoxInput" placeholder="Presiona enter para enviar" maxlength="40" autofocus>
+                <button type="button" id="chatBoxButton">Enviar</button>
+            </div>
+        </div>
+    </div>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

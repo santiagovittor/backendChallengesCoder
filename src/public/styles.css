@@ -22,14 +22,20 @@ a:visited{
     background-image: linear-gradient(135deg, #f05f57 10%, #360940 100%);
 }
 
-#form{
+#productsTemplate{
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#productsForm{
     display: grid;
     justify-content: center;
     align-items: center;
-    width: 100vh;
     height: fit-content;
     padding: 1rem;
-    margin: 1rem 0 1rem 0;
+    margin: 1rem 1rem 1rem 1rem;
     text-transform: uppercase;
     color: white;
     background: rgba(255, 255, 255, 0.25);
@@ -42,12 +48,12 @@ a:visited{
     align-items: center;
 }
 
-#form input{
+#productsForm input{
     margin: 1rem 0 1rem 0;
     height: 1.25rem;
 }
 
-#form button{
+#productsForm button{
     height: 5vh;
     border-radius: 10px;
     background-color: transparent;
@@ -59,13 +65,13 @@ a:visited{
     transition: .5s;
 }
 
-#form button:hover{
+#productsForm button:hover{
     background-color: white;
     color: black;
     transition: .5s;
 }
 
-#form h1{
+#productsForm h1{
     margin-bottom: 1rem;
     text-align: center;
 }
@@ -113,9 +119,9 @@ a:visited{
 
 .productsTable {
     display: grid;
-    width: 40vw;
+    width: fit-content;
     grid-gap: 1rem;
-    margin: 5vh 0 5vh 0;
+    margin: 5vh 2.5vh 5vh 2.5vh;
     background: rgba(255, 255, 255, 0.25);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(4px);
@@ -171,4 +177,110 @@ a:visited{
     background-color: white;
     color: black;
     transition: .5s;
+}
+
+.chatBox {
+    display: grid;
+    min-height: 75vh;
+    opacity: 0.7;
+    transition: .5s;
+    margin: 5vh 2.5vh 5vh 2.5vh;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: .5rem;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.chatBox:hover{
+    opacity: 1;
+    transition: .5s;
+    border-radius: 1rem;
+}
+
+.chatBox h1{
+    color: white;
+    font-weight: bold;
+}
+
+.chatBox__messages{
+    display: grid;
+    background-color: white;
+    min-height: 30vh;
+    max-height: 40vh;
+    color: black;
+    text-align: start;
+    overflow-y: scroll;
+    overflow-x: scroll;
+}
+
+.chatBox__inputContainer{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+#chatBoxButton, #logInButton{
+    height: 2rem;
+    margin-right: 0.1rem;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: #757575;
+    transition: 1s;
+    cursor: pointer;
+}
+
+#chatBoxInput{
+    width: 80%;
+    height: 2rem;
+    margin-right: 0.1rem;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: #757575;
+    transition: 1s;
+}
+#chatBoxInput:focus{
+    background-color: white;
+}
+
+#chatBoxButton{
+    width: 20%;
+}
+
+
+ #chatBoxButton:hover, #logInButton:hover{
+    background-color: white;
+    color: black;
+    outline: none;
+    transition: 1s;
+}
+
+.messageLine{
+    display: flex;
+}
+
+.messageLine__user{
+    font-weight: bold;
+    color:dodgerblue;
+}
+
+.messageLine__timeSent{
+    font-weight: bold;
+    color: maroon;
+}
+
+.messageLine__message{
+    font-style: italic;
+    color: olivedrab;
 }
