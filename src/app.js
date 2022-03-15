@@ -1,7 +1,7 @@
 const express = require('express');
 const { Server } = require('socket.io')
-const ProductManager = require('./managers/productsManager');
-const MessageManager = require('./managers/messagesManager')
+const ProductManager = require('./managers/mysql/productsManagerSQL.js');
+const MessageManager = require('./managers/mysql/messagesManagerSQL.js')
 
 // const productsRouter = require('./routes/productsRouter')
 
@@ -17,11 +17,30 @@ app.use(express.static(__dirname + '/public'))
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 
+
 //services
 const productService = new ProductManager();
 const messageService = new MessageManager();
 
 let log = [];
+
+
+app.get('/getProductById/:id', async (req,res)=>{
+    let searchId = parseInt(req.params.id);
+    let productToFind = await productService.getById(searchId)
+    res.send(productToFind)
+})
+
+app.delete('/deleteProductById/:id', async (req,res)=>{
+    let idToDelete = parseInt(req.params.id);
+    let productToDelete = await productService.deleteById(idToDelete)
+    res.send(productToDelete)
+})
+
+app.delete('/deleteAll', async (req,res)=>{
+    let deleteAll = await productService.deleteAll();
+    res.send(deleteAll)
+})
 
 
 //socket

@@ -20,6 +20,7 @@ form.addEventListener('submit', (evt) => {
 
 
 const sendMessage = () => {
+
     if (user === undefined) {
         socket.emit('message', { user: 'ADMIN', message: 'Por favor identificate para enviar mensajes.' })
         chatBox.value = "";

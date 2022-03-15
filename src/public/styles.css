@@ -179,6 +179,16 @@ a:visited{
     transition: .5s;
 }
 
+#downloadLog{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 5vh;
+    height: 5vh;
+    cursor: pointer;
+    background-color: transparent;
+}
+
 .chatBox {
     display: grid;
     min-height: 75vh;

@@ -32,10 +32,15 @@ class MessagesManager {
                 return { status: 'Error', error: error }
             }
         }
-        message.id = 1;
-        await fs.promises.writeFile(pathToMessages, JSON.stringify([message], null, 2))
-        return { status: 'Success', message: "Message added." }
-
+        try{
+            message.id = 1;
+            await fs.promises.writeFile(pathToMessages, JSON.stringify([message], null, 2))
+            return { status: 'Success', message: "Message added." }
+    
+        }
+        catch(error){
+                            return { status: 'Error', error: error }
+        }
     }
 
     getAll = async () => {

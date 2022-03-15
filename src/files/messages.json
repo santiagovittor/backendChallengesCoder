@@ -1,0 +1,62 @@
+[
+  {
+    "user": "ADMIN",
+    "message": "Por favor identificate para enviar mensajes.",
+    "timeSent": "2/2/2022 14:13:57",
+    "id": 10
+  },
+  {
+    "user": "despues@decerrar.com",
+    "message": "es posible que a mi ladoo",
+    "timeSent": "2/2/2022 14:12:28",
+    "id": 9
+  },
+  {
+    "user": "despues@decerrar.com",
+    "message": "como",
+    "timeSent": "2/2/2022 14:12:24",
+    "id": 8
+  },
+  {
+    "user": "despues@decerrar.com",
+    "message": "asi que bueno",
+    "timeSent": "2/2/2022 14:10:32",
+    "id": 7
+  },
+  {
+    "user": "despues@decerrar.com",
+    "message": "entonces",
+    "timeSent": "2/2/2022 14:10:30",
+    "id": 6
+  },
+  {
+    "user": "ADMIN",
+    "message": "despues@decerrar.com ha iniciado sesión.",
+    "timeSent": "2/2/2022 14:10:27",
+    "id": 5
+  },
+  {
+    "user": "ADMIN",
+    "message": "Por favor identificate para enviar mensajes.",
+    "timeSent": "2/2/2022 14:10:1",
+    "id": 4
+  },
+  {
+    "user": "ahorasi@ahora.com",
+    "message": "ok",
+    "timeSent": "2/2/2022 14:9:32",
+    "id": 3
+  },
+  {
+    "user": "ADMIN",
+    "message": "ahorasi@ahora.com ha iniciado sesión.",
+    "timeSent": "2/2/2022 14:9:29",
+    "id": 2
+  },
+  {
+    "user": "ADMIN",
+    "message": "Por favor identificate para enviar mensajes.",
+    "timeSent": "2/2/2022 14:9:13",
+    "id": 1
+  }
+]
