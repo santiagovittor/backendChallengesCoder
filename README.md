@@ -5,7 +5,7 @@ _En este repositorio se subirán los archivos correspondientes a las entregas de
 ## De momento 📋
 
 ```
-Entrega de clase número 16 : SQL y NodeJs 
+Entrega de clase número 22 : Mocks y Normalización 
 ```
 
 ## Descripción
@@ -20,6 +20,12 @@ La configuración de mysql se encuentra en database/options/mysqlconfig.js.
 
 
 ### En el despliegue actual puedes acceder a las siguientes rutas: 
+
+Para acceder a una tabla creada con cinco productos aleatorios traidos desde Faker.
+```
+/api/productos-test
+```
+
 
 Para agregar productos y mensajes al chat interactuando con el front desde
 ```

@@ -1,6 +1,42 @@
 [
   {
     "user": "ADMIN",
+    "message": "juan@juan.com ha iniciado sesión.",
+    "timeSent": "4/3/2022 11:59:39",
+    "id": 16
+  },
+  {
+    "user": "santi@santi.com.ar",
+    "message": "oh pero como",
+    "timeSent": "4/3/2022 11:59:30",
+    "id": 15
+  },
+  {
+    "user": "santi@santi.com.ar",
+    "message": "2",
+    "timeSent": "4/3/2022 11:59:25",
+    "id": 14
+  },
+  {
+    "user": "santi@santi.com.ar",
+    "message": "hola",
+    "timeSent": "4/3/2022 11:59:19",
+    "id": 13
+  },
+  {
+    "user": "ADMIN",
+    "message": "santi@santi.com.ar ha iniciado sesión.",
+    "timeSent": "4/3/2022 11:59:15",
+    "id": 12
+  },
+  {
+    "user": "ADMIN",
+    "message": "santi@santi.com ha iniciado sesión.",
+    "timeSent": "1/3/2022 9:35:40",
+    "id": 11
+  },
+  {
+    "user": "ADMIN",
     "message": "Por favor identificate para enviar mensajes.",
     "timeSent": "2/2/2022 14:13:57",
     "id": 10

@@ -1,7 +1,13 @@
 const express = require('express');
 const { Server } = require('socket.io')
-const ProductManager = require('./managers/mysql/productsManagerSQL.js');
-const MessageManager = require('./managers/mysql/messagesManagerSQL.js')
+const ProductManager = require('./managers/productsManagerFs.js');
+const MockProductManager = require('./managers/productsMockMemory')
+const MessageManager = require('./managers/messagesManagerFs.js')
+const handlebars = require('express-handlebars')
+const normalizr = require('normalizr')
+const { normalize, denormalize, schema } = normalizr
+
+
 
 // const productsRouter = require('./routes/productsRouter')
 
@@ -20,9 +26,25 @@ app.use(express.json())
 
 //services
 const productService = new ProductManager();
+const mockProductService = new MockProductManager();
 const messageService = new MessageManager();
 
+
 let log = [];
+
+ app.engine('handlebars',handlebars.engine());
+ app.set('views',__dirname+'/views/handlebars');
+ app.set('view engine','handlebars');
+
+
+app.get('/api/productos-test', async (req,res)=>{
+    let products = await mockProductService.generateProducts();
+    res.render('products',{
+        products:products
+    })
+
+})
+
 
 
 app.get('/getProductById/:id', async (req,res)=>{
